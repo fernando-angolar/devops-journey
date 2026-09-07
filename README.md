@@ -33,4 +33,4 @@ Estou seguindo um plano estruturado de estudos focado em Cloud Native, Kubernete
 - [ ] Docker avançado
 - [ ] Kubernetes
 - [ ] Terraform
-- [ ] CI/CDy
+- [ ] CI/CD
