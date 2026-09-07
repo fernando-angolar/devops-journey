@@ -1,9 +1,8 @@
-# devops-journe# DevOps Journey
+# DevOps Journey
 
 Repositório da minha jornada para me tornar um DevOps / Cloud Native Engineer.
 
 ## Sobre mim
-
 
 Estou seguindo um plano estruturado de estudos focado em Cloud Native, Kubernetes e práticas modernas de DevOps.
 
@@ -16,15 +15,13 @@ Estou seguindo um plano estruturado de estudos focado em Cloud Native, Kubernete
 
 ## Estrutura do repositório
 
-
 - `docs/` → Anotações e documentação
 - `projects/` → Projetos práticos
-  - `01-static-site/`
+  - `01-static-site/` → Site estático com Nginx + Docker + EC2
   - `02-nodejs-api/`
 - `notes/` → Anotações de estudos e do livro
 
 ## Stack que estou aprendendo
-
 
 - Linux
 - Docker
@@ -36,10 +33,24 @@ Estou seguindo um plano estruturado de estudos focado em Cloud Native, Kubernete
 
 ## Progresso
 
+### Semana 1
 
 - [x] Configuração do ambiente (WSL2 + Ubuntu)
-- [x] Conta AWS Free Tier
-- [ ] Docker avançado
-- [ ] Kubernetes
+- [x] Conta AWS Free Tier + MFA + IAM
+- [x] AWS CLI configurado
+- [x] Repositório organizado
+
+### Semana 2
+
+- [x] Criação de instância EC2
+- [x] Instalação do Docker na EC2
+- [x] Projeto 01: Site estático com Nginx + Docker
+- [x] Deploy do site na AWS (EC2)
+- [x] Configuração de Security Group (portas 80 e 443)
+
+### Próximos passos
+
+- [ ] Docker avançado (multi-stage builds)
+- [ ] API Node.js containerizada
+- [ ] Início de Kubernetes
 - [ ] Terraform
-- [ ] CI/CD
