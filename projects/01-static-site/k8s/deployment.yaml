@@ -4,6 +4,8 @@ metadata:
   name: static-site
   labels:
     app: static-site
+  annotations:
+    demo: "semana3-dia6"
 spec:
   replicas: 2
   selector:
