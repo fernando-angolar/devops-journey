@@ -48,6 +48,15 @@ Estou seguindo um plano estruturado de estudos focado em Cloud Native, Kubernete
 - [x] Deploy do site na AWS (EC2)
 - [x] Configuração de Security Group (portas 80 e 443)
 
+### Semana 3
+
+- [x] Cluster local (kind)
+- [x] Deployment + ReplicaSet + Pods
+- [x] Service + port-forward
+- [x] ConfigMap e Secret
+- [x] Ingress (manifesto, sem controller)
+- [x] Scale e rollout
+
 ### Próximos passos
 
 - [ ] Docker avançado (multi-stage builds)
