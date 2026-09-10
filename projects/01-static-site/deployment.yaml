@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: static-site
+  labels:
+    app: static-site
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: static-site
+  template:
+    metadata:
+      labels:
+        app: static-site
+    spec:
+      containers:
+      - name: nginx
+        image: static-site:semana3
+        ports:
+        - containerPort: 80
+        volumeMounts:
+        - name: html-config
+          mountPath: /usr/share/nginx/html
+          readOnly: true
+      volumes:
+      - name: html-config
+        configMap:
+          name: static-site-config

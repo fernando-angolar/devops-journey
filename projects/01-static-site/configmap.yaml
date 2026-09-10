@@ -1,0 +1,39 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: static-site-config
+data:
+  index.html: |
+    <!DOCTYPE html>
+    <html lang="pt">
+    <head>
+      <meta charset="UTF-8">
+      <title>DevOps Journey - ConfigMap</title>
+      <style>
+        body {
+          font-family: Arial, sans-serif;
+          background: #0f172a;
+          color: #e2e8f0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          margin: 0;
+          text-align: center;
+        }
+        .box {
+          background: #1e293b;
+          padding: 40px;
+          border-radius: 12px;
+        }
+        h1 { color: #38bdf8; }
+      </style>
+    </head>
+    <body>
+      <div class="box">
+        <h1>Conteúdo veio do ConfigMap</h1>
+        <p>Semana 3 - Dia 4</p>
+        <p>A imagem ficou igual. A configuração é que mudou.</p>
+      </div>
+    </body>
+    </html>
