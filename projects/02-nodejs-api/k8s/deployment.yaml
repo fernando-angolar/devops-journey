@@ -20,8 +20,6 @@ spec:
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 3000
-        env:
-        - name: PORT
-          value: "3000"
-        - name: MESSAGE
-          value: "API no Kubernetes"
+        envFrom:
+        - configMapRef:
+            name: node-api-config
