@@ -29,4 +29,6 @@ jobs:
                 context: projects/01-static-site
                 file: projects/01-static-site/Dockerfile
                 push: false
-                tags: static-site:ci
+                tags: |
+                    static-site:${{ github.sha }}
+                    static-site:latest

@@ -29,4 +29,6 @@ jobs:
                 context: projects/02-nodejs-api
                 file: projects/02-nodejs-api/Dockerfile
                 push: false
-                tags: node-api:ci
+                tags: |
+                    node-api:${{ github.sha }}
+                    node -api:latest
