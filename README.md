@@ -65,8 +65,14 @@ Estou a seguir um plano estruturado de estudos focado em Cloud Native, Kubernete
 - [x] ConfigMap via envFrom
 - [x] Liveness e readiness
 
-## Próximos passos
+### Semana 5
+- [x] Primeiro workflow GitHub Actions
+- [x] Build da API no CI
+- [x] Build do site no CI
+- [x] Tags com SHA do commit
+- [x] Pipeline vermelho e recuperação
 
+## Próximos passos
+- [ ] Push da imagem para um registry (GHCR ou Docker Hub)
 - [ ] Terraform (AWS)
-- [ ] GitHub Actions (CI/CD)
 - [ ] Observabilidade (Prometheus + Grafana)

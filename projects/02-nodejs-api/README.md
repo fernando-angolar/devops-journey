@@ -12,3 +12,8 @@ API HTTP mínima para a jornada Cloud Native.
 ```bash
 node server.js
 curl http://localhost:3000/health
+
+## CI
+O workflow `.github/workflows/api-ci.yml` constrói a imagem em cada push
+em `projects/02-nodejs-api/` (sem publicar no registry).
+Ver: GitHub → Actions → API CI
