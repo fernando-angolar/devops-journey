@@ -18,7 +18,8 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: static-site:semana3
+        image: ghcr.io/fernando-angolar/static-site:latest
+        imagePullPolicy: Always
         ports:
         - containerPort: 80
         volumeMounts:
