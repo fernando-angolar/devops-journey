@@ -72,6 +72,12 @@ Estou a seguir um plano estruturado de estudos focado em Cloud Native, Kubernete
 - [x] Tags com SHA do commit
 - [x] Pipeline vermelho e recuperação
 
+### Semana 6
+- [x] Publicar API no GHCR
+- [x] Publicar site no GHCR
+- [x] Pacotes públicos ligados ao repo
+- [x] kind a puxar do GHCR
+
 ## Próximos passos
 - [ ] Push da imagem para um registry (GHCR ou Docker Hub)
 - [ ] Terraform (AWS)
