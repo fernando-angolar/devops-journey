@@ -3,5 +3,5 @@ kind: ConfigMap
 metadata:
   name: node-api-config
 data:
-  MESSAGE: "ConfigMap atualizado - DIA 4"
+  MESSAGE: "ConfigMap atualizado - Dia 4"
   PORT: "3000"
