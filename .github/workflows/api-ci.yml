@@ -2,21 +2,31 @@ name: API CI
 
 on:
     push:
-        branches: [main, master]
+        branches: [main]
+        paths:
+            - "projects/02-nodejs-api/**"
+            - ".github/workflows/api-ci.yml"
     pull_request:
-        branches: [main, master]
+        branches: [main]
+        paths:
+            - "projects/02-nodejs-api/**"
+            - ".github/workflows/api-ci.yml"
     workflow_dispatch:
     
 jobs:
-    check:
+    build:
         runs-on: ubuntu-latest
         steps:
             - name: Checkout
               uses: actions/checkout@v4
+
+            - name: Set up Docker Buildx
+              uses: docker/setup-buildx-action@v3
             
-            - name: Mostrar estrutura
-              run: |
-                echo "Repo no runner:"
-                ls -la
-                echo "API:"
-                ls -la projects/02-nodejs-api
+            - name: Build API image
+              uses: docker/build-push-action@v6
+              with:
+                context: projects/02-nodejs-api
+                file: projects/02-nodejs-api/Dockerfile
+                push: false
+                tags: node-api:ci
