@@ -31,4 +31,4 @@ jobs:
                 push: false
                 tags: |
                     node-api:${{ github.sha }}
-                    node -api:latest
+                    node-api:latest
