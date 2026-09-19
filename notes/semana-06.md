@@ -20,6 +20,11 @@
 - imagePullPolicy: Always força ir ao registry
 - latest é prático; SHA é reproduzível
 
+## Cluster vs registry
+- Publicar no GHCR não actualiza o cluster
+- kubectl apply / set image / rollout restart é que cria Pods novos
+- imagePullPolicy Always + latest volta a puxar no restart
+
 ## Comandos
 docker pull ghcr.io/fernando-angolar/node-api:latest
 kubectl apply -f projects/02-nodejs-api/k8s/
