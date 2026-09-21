@@ -78,7 +78,13 @@ Estou a seguir um plano estruturado de estudos focado em Cloud Native, Kubernete
 - [x] Pacotes públicos ligados ao repo
 - [x] kind a puxar do GHCR
 
+### Semana 7
+- [x] Terraform instalado
+- [x] Provider AWS + plan
+- [x] Security Group em código
+- [x] EC2 em código + SSH
+- [x] terraform destroy
+
 ## Próximos passos
-- [ ] Push da imagem para um registry (GHCR ou Docker Hub)
-- [ ] Terraform (AWS)
+- [ ] Variáveis Terraform + remote state
 - [ ] Observabilidade (Prometheus + Grafana)
